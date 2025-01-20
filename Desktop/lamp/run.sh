@@ -13,7 +13,7 @@ cd /home/waseem-jadaa/Desktop/lamp
 echo "Pushing code changes to Git"
 git add .
 git commit -m "Updated application code"
-git push origin "$GIT_BRANCH"
+git push --force origin main "$GIT_BRANCH"
 
 if [ $? -eq 0 ]; then
     echo "Code pushed to Github successfully"
